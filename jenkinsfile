@@ -1,6 +1,6 @@
 node{
    stage('test'){
-     echo 'testing the stage1'
+     git 'https://github.com/AnithaRamachandranR/jenkins'
      }
    stage('Deploy to airflow'){
     sshagent(['airflow']) {
