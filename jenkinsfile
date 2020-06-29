@@ -1,6 +1,6 @@
 node{
-   stage('SCM Checkout'){
-     git 'https://github.com/Nirmalraaj/Jenkins/'
+   stage('test'){
+     echo 'testing the stage1'
      }
    stage('Deploy to airflow'){
     sshagent(['airflow']) {
