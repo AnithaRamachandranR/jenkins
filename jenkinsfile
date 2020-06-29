@@ -3,8 +3,8 @@ node{
      git 'https://github.com/Nirmalraaj/Jenkins/'
      }
    stage('Deploy to airflow'){
-    sshagent(['jenkins_tom']) {
-    sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/anithapip/*.py  ec2-user@54.156.115.234:/home/ec2-user/airflow/dags/'
+    sshagent(['airflow']) {
+    sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/anithapip/*.py  ec2-user@54.167.161.146:/home/ec2-user/airflow/dags/'
 
      }
     }
