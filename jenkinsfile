@@ -9,7 +9,7 @@ node{
      }
     }
    stage('schedule'){
-   sh 'ec2-user@54.167.161.146:/home/ec2-user/airflow'
+   sh 'ec2-user@54.167.161.146:/home/ec2-user/airflow/'
    sh 'airflow scheduler'
    }
 }  
