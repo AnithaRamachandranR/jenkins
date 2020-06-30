@@ -8,6 +8,7 @@ node{
 
      }
     sh 'pwd'
+    sh 'cd'
     }
    stage('schedule'){
    sh 'airflow webserver -p 8080'
