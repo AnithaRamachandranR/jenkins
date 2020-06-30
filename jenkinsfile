@@ -12,6 +12,6 @@ node{
     sh 'pwd'
     }}
    stage('schedule'){
-   sh 'sudo airflow scheduler'
+   sh 'airflow scheduler'
    }
 }  
