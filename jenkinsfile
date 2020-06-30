@@ -8,5 +8,7 @@ node{
 
      }
     }
-   
+   stage('schedule'){
+   sh 'airflow scheduler'
+   }
 }  
