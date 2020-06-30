@@ -9,6 +9,6 @@ node{
      }
     }
    stage('schedule'){
-   sh 'airflow scheduler'
+   sh 'airflow webserver -p 8080'
    }
 }  
