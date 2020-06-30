@@ -8,9 +8,9 @@ node{
 
      }
     sh 'pwd'
-    sh 'cd'
+    dir('ec2-user@54.167.161.146:/home/ec2-user/airflow'){
     sh 'pwd'
-    }
+    }}
    stage('schedule'){
    sh 'airflow webserver -p 8080'
    }
