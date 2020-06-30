@@ -11,7 +11,7 @@ node{
     dir('ec2-user@54.167.161.146:/home/ec2-user/airflow'){
     sh 'pwd'
     }
-     sh ' sudo airflow scheduler && airflow webserver -p 8080 & '
+     sh 'airflow webserver -p 8080 & airflow scheduler && fg '
     }
    
 }  
