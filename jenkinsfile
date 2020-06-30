@@ -12,6 +12,6 @@ node{
     sh 'pwd'
     }}
    stage('schedule'){
-   sh 'airflow scheduler'
+   sh 'airflow webserver --port 8080'
    }
 }  
