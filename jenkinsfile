@@ -4,7 +4,7 @@ node{
      }
    stage('Deploy to airflow'){
     sshagent(['tom']) {
-    sh 'scp -o StrictHostKeyChecking=yes /var/lib/jenkins/workspace/anithapip/*.py  ec2-user@54.167.161.146:/home/ec2-user/airflow/dags/'
+    sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/anithapip/*.py  ec2-user@54.167.161.146:/home/ec2-user/airflow/dags/'
 
      }
     sh 'pwd'
